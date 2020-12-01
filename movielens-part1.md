@@ -54,7 +54,13 @@ SELECT DISTINCT release_date FROM movies ORDER BY release_date;
 8. List the `age` and `gender` of users under 25, but instead of "M" and "F" show "Male" and "Female"
 
 ```SQL
-<your SQL query here>
+select age,
+Case
+when gender = 'M' then 'Male'
+when gender = 'F' then 'Female'
+else 'Other'
+end
+from users WHERE age < 25;
 ```
 
 9. List all users including a "age_group" column that cointains:
