@@ -36,7 +36,7 @@ SELECT title FROM movies WHERE SUBSTRING (title, 1, 1) = 'F';
 5. List the `title` of the oldest movie.
 
 ```SQL
-<your SQL query here>
+SELECT title FROM movies ORDER BY release_date LIMIT 1;
 ```
 
 6. List the `title` and `release_date` of all the movies from the newest to the oldest one.
