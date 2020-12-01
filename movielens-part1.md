@@ -42,7 +42,7 @@ SELECT title FROM movies ORDER BY release_date LIMIT 1;
 6. List the `title` and `release_date` of all the movies from the newest to the oldest one.
 
 ```SQL
-<your SQL query here>
+SELECT title, release_date FROM movies ORDER BY release_date;
 ```
 
 7. List all release years in ascending order without having repeated values.
