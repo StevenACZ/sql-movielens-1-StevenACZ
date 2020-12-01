@@ -48,7 +48,7 @@ SELECT title, release_date FROM movies ORDER BY release_date;
 7. List all release years in ascending order without having repeated values.
 
 ```SQL
-<your SQL query here>
+SELECT DISTINCT release_date FROM movies ORDER BY release_date;
 ```
 
 8. List the `age` and `gender` of users under 25, but instead of "M" and "F" show "Male" and "Female"
