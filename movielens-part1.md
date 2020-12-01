@@ -77,7 +77,7 @@ when age < 18 then 'Infant'
 when age >= 18 AND age <= 30 then 'Young'
 when age >= 31 AND age <= 50 then 'Adult'
 when age > 50 then 'Senior'
-end
+end AS age_group
 FROM users;
 ```
 
