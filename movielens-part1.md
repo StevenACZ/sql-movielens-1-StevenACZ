@@ -24,7 +24,7 @@ SELECT title, release_date FROM movies WHERE release_date = '1995-01-01';
 3. List the `title` and `release_date` of all the movies released between `1996-01-01` and `1998-01-01`.
 
 ```SQL
-<your SQL query here>
+SELECT * FROM movies WHERE release_date BETWEEN DATE '1996-01-01' AND '1998-01-01';
 ```
 
 4. List the `title` of all movies that begins with the letter 'F'.
