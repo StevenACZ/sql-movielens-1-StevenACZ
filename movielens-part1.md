@@ -84,5 +84,12 @@ FROM users;
 10. Using the previous table, list all female users of the groups "Young" and "Adult".
 
 ```SQL
-<your SQL query here>
+SELECT *,
+Case
+when age < 18 then 'Infant'
+when age >= 18 AND age <= 30 then 'Young'
+when age >= 31 AND age <= 50 then 'Adult'
+when age > 50 then 'Senior'
+end AS age_group
+FROM users WHERE gender = 'F' AND ((age >= 18 AND age <= 30) OR (age >= 31 AND age <= 50));
 ```
