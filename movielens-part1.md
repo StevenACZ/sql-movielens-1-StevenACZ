@@ -30,7 +30,7 @@ SELECT * FROM movies WHERE release_date BETWEEN DATE '1996-01-01' AND '1998-01-0
 4. List the `title` of all movies that begins with the letter 'F'.
 
 ```SQL
-<your SQL query here>
+SELECT title FROM movies WHERE SUBSTRING (title, 1, 1) = 'F';
 ```
 
 5. List the `title` of the oldest movie.
