@@ -11,7 +11,8 @@ SELECT * FROM genres;
 1. List all the columns of the `movies` table.
 
 ```SQL
-<your SQL query here>
+SELECT id, title, release_date FROM movies;
+SELECT * FROM movies;
 ```
 
 2. List the `title` and `release_date` of all the movies released in `1995-01-01`.
