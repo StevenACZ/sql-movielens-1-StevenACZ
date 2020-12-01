@@ -18,7 +18,7 @@ SELECT * FROM movies;
 2. List the `title` and `release_date` of all the movies released in `1995-01-01`.
 
 ```SQL
-<your SQL query here>
+SELECT title, release_date FROM movies WHERE release_date = '1995-01-01';
 ```
 
 3. List the `title` and `release_date` of all the movies released between `1996-01-01` and `1998-01-01`.
